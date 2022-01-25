@@ -1,0 +1,18 @@
+{
+    "name": "az-digital/az_google_cse",
+    "description": "Adds an alert block type for used during University-wide emergencies.",
+    "type": "drupal-custom-module",
+    "require": {
+        "cweagans/composer-patches": "^1.7",
+        "drupal/core": "^9",
+        "drupal/google_cse": "3.4.0"
+    },
+    "extra": {
+        "patches": {
+            "drupal/google_cse": {
+                "Disable watermark": "https://gist.githubusercontent.com/joeparsons/201d0c98e4b62feff7cd62aaac1bd77a/raw/1d7b76ec1f849ea05bd46019f480e5a6844539a8/google_cse-disable-watermark.patch"
+            }
+        }
+    }
+  }
+  
