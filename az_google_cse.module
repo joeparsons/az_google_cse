@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function az_google_cse_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.az_google_cse':
+
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Arizona Digital implementation of Google Custom Search Engine (CSE) extends the Drupal <a href="https://www.drupal.org/project/google_cse" target="blank"><code>google_cse</code></a> contrib module.') . '</p>';
+      $output .= '<p>' . t('After installing this module, review the Arizona Digital Google CSE at <a href="/admin/config/search/pages/manage/az_google_cse_search" target="blank">admin/config/search/pages</a>, optionally setting it as the default search module, and configure it by entering Google\'s unique ID for your CSE.  The Google CSE, the search page can be found at /search/google. The two search blocks that come with Arizona Quickstart (az_barrio_search, az_barrio_offcanvas_searchform) should be configured to use the new search page.') . '</p>';
+      $output .= '<b>' . t('Permissions') . '</b>';
+      $output .= '<p>' . t('Determine which of your audiences should be allowed to search using this search page, and <a href="/admin/people/permissions#module-google_cse">set permissions</a> accordingly. We recommend everyone have access, otherwise the search page will show an access denied message for users without those permissions.') . '</p>';
+
+      return $output;
+  }
+}

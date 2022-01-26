@@ -6,7 +6,7 @@ dependencies:
   enforced:
     module:
       - az_google_cse
-id: az_google_cse_search
+id: google_cse_search
 label: 'Google CSE Search'
 path: google
 weight: 0
