@@ -1,6 +1,6 @@
 {
     "name": "az-digital/az_google_cse",
-    "description": "Adds an alert block type for used during University-wide emergencies.",
+    "description": "Adds Google Custom Search engine patches and default config.",
     "type": "drupal-custom-module",
     "require": {
         "cweagans/composer-patches": "^1.7",
