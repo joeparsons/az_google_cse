@@ -1,9 +1,4 @@
 and_or_limit: 7
-dependencies:
-  module:
-    enforced:
-      - az_google_cse
-
 default_page: google_cse_search
 index:
   cron_limit: 100
